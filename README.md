@@ -6,3 +6,4 @@ learnt how to push a change
 Learnt about creating a website
 Learnt about website design
 Made a spaghetti and marshmellow tower it failed
+Git is great
