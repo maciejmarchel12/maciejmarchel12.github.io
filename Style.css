@@ -1,20 +1,6 @@
 img {
         border-radius: 8px;
-    }  
-
-.button {
-    background-color: cornflowerblue;
-    border: none;
-    color: black;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-}
-
+    }    
 body {margin:0;} 
     
 ul {
@@ -46,4 +32,66 @@ li a:hover:not(.active) {
     
 .active {
     background-color:beige
+}
+
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: right;
+    width: 180px;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: top;
+}     
+    <div style="padding:20px;margin-center:30px;background-color:#labc9c;height:1500px;"> 
+    </div>    
+body {margin:0;}    
+    
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #56d2ff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+li { 
+    float: left;
+}
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    
+li a:hover:not(.active) {
+    background-color:aliceblue
+    }
+    
+.active {
+    background-color:beige
+}
+
+#luck {
+    background-image: url(http://moziru.com/images/fortress-clipart-medieval-manor-1.gif), url(http://svn.red-bean.com/repos/kfogel/trunk/www/images/parchment-background.jpg);
+    background-position: right bottom, left top;
+    background-repeat: no-repeat, repeat;
+    padding: 5px;
 }
