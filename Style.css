@@ -93,7 +93,15 @@ li a:hover:not(.active) {
     background-image:url(http://svn.red-bean.com/repos/kfogel/trunk/www/images/parchment-background.jpg);
     background-position: right bottom, left top;
     padding: 150px;
+} 
+
+
+#luck2 {
+    background-image:url(http://svn.red-bean.com/repos/kfogel/trunk/www/images/parchment-background.jpg);
+    background-position: right bottom, left top;
+    padding: 250px;
 }
+
 
 ul {
     list-style-type: none;
