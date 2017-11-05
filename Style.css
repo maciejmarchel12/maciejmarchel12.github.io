@@ -2,39 +2,60 @@ img {
     width:1600px;
     height:100px;
     object-fit:cover;
-    }    
-body {margin:0;} 
-    
+    }  
+/* navbar */
 ul {
-    list-style-type: none; 
+    list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #56d2ff;
-    position: fixed;
-    top: 0;
-    width: 100%;
+    background-color: #333;
 }
 
-li { 
+li {
     float: left;
 }
 
-    li a {
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-    }
-    
-li a:hover:not(.active) {
-    background-color:aliceblue
-    }
-    
-.active {
-    background-color:beige
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: darkorange;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+   
+
 /* gallery */
 div.gallery {
     margin: 5px;
@@ -62,60 +83,10 @@ body {margin:0;}
     
 /* background image */
 body {
-    background-image: url(http://svn.red-bean.com/repos/kfogel/trunk/www/images/parchment-background.jpg);
+    background-image: url(https://image.freepik.com/free-photo/white-paper-background_1154-683.jpg);
 }
 /* dropdown bar */
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #56d2ff;
-    opacity: .8;
-}
 
-li {
-    float: left;
-}
-
-li a, .dropbtn {
-    display: inline-block;
-    color: black;
-    text-align: center;
-    padding: 14px 16;
-    text-decoration: none;
-}
-
-li a:hover, .dropdown:hover .dropbtn {
-    background-color: beige;
-}
-
-li.dropdown {
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none;
-    posistion: absolute;
-    background-color: beige;
-    min-width: 20px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.8);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-    
-.dropdown-content a:hover {background-color: white}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
 /* box */    
 .div1 {
     width: 1080px;
@@ -130,7 +101,7 @@ body {
     
 /* Style the header */
 .header {
-    background-color: burlywood;
+    background-color: darkorange;
     padding: 1px;
     text-align: center;
 }
