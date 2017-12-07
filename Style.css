@@ -29,6 +29,10 @@ li a:hover, .dropdown:hover .dropbtn {
     background-color: #EAAD17;
 }
 
+.active {
+    background-color: #EAAD17;
+}
+
 li.dropdown {
     display: inline-block;
 }
