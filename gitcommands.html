@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="shortcut icon" href="http://maltaflag.facts.co/MaltaFlagImage.jpg" />
+<title> Malta </title>  
+
+<link rel="stylesheet" type="text/css" href="Style.css"/>
+<link rel="stylesheet" type="maciejmarchel12.github.io/Style.css" href="Style.css"/>
+    
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">   
+    
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>    
+    
+</head>
+<body>
+    
+<ul>
+    <li><a href="home.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+     <li><a href="geography.html">Geography</a></li>
+    <li><a href="people.html">People</a></li>
+    <li><a href="landmarks.html">Landmarks</a></li>
+     <li class="dropdown">
+           <a href="javascript:void(0)" class="dropbtn">More</a>
+        <div class="dropdown-content">
+           <a href="changes.html">Changes</a>
+           <a href="contact.html">Contact</a>
+        </div>
+    <li><a class="active" href="gitcommands.html">Manual</a></li>     
+    </li>
+</ul> 
+    
+<div id="luck"></div>
+
+<div class="container">
+  <h2>Git guide to commands</h2>
+  <p><strong>Note:</strong> This <strong>manual</strong> contains necessary commands for git when working on your own, contributing to other projects and working as a team</p>
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">The Basics</a>
+        </h4>
+      </div>
+      <div id="collapse1" class="panel-collapse collapse in">
+          <div class="panel-body"><strong>Git push Git pull Git add (filename) Git status Git commit -m “first commit”</strong> These commands are used to add files to your repository through a terminal or git bash.<strong>git pull,</strong>pulls a repository straight from github onto your machine.To add files from your machine through a terminal or git bash we first use the command <strong>git add (filename)</strong>. Then we use <strong>git commit -m “insert your own message based on the commit”</strong> to commit the file to a repo after that we check if it got committed or not by using git status to check if it worked if it’s green it’s ok if it’s red you need to go back or try committing again.After we committed and it shows the filename in green when using git status we use git push to push the file into the repo. 
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">The Hard part</a>
+        </h4>
+      </div>
+      <div id="collapse2" class="panel-collapse collapse">
+          <div class="panel-body"><strong>Part 1,</strong> Forking a repo. To fork some ones repo you first go onto github then we go to the top right where it should say fork we click that and we wait until it’s done. Once it’s done you should have a copy of that repo on your account. <strong>Part 2,</strong> Cloning the repo you forked. First you want to go onto your account and go to the forked repo you have, once you’re inside the repo you want to click the clone or download button (the green button at the top) if it’s not set to ssh <strong>(link to how to set up ssh keys if you haven’t already https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys--2)</strong> automatically change it to ssh from https and copy the the line that’s similar to this git@github.com:USERNAME/REPONAME.github.io.git We then go into the terminal/git bash and use the command <strong>git clone</strong> <strong>(git@github.com:USERNAME/REPONAME.github.io.git)</strong> It should have cloned now. <strong>Part 3,</strong> Creating a remote for the forked repo. Before we create a remote we want to check if there’s already a remote and to do that we use the command <strong>git remote -v</strong> and it should tells what remotes are there. To create a remote we also need to be in the location of the repo on your machine to get to it we use ls to check where we are and cd to go into folders through the terminal or git bash, once we are in the repo location we use <strong>git remote add (name of the remote)</strong> <strong>(git@github.com:USERNAME/REPONAME.github.io.git)</strong> And it should make that remote and to check if it did we use <strong>git remote -v,</strong> it should now have 4 remotes.
+      </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">The Hard part 2</a>
+        </h4>
+      </div>
+      <div id="collapse3" class="panel-collapse collapse">
+          <div class="panel-body"><strong>Part 4,</strong> Creating a branch. Creating a branch is necessary if we want to make a pull request to the person’s repo we forked so that we can add changes or fixes. Before we create a new branch we need to make sure we’re in the master branch To switch between branches we use <strong>git checkout (your branch name)</strong>. To create a branch we use the command <strong>git checkout -b (name your branch)</strong> this should now create a new branch in the forked repo.<strong>Part 5,</strong> Pushing a change to a forked repo.To push a change to a forked repo we first use <strong>git add (filename)</strong> then we continue with <strong>git commit -m “your message”</strong> to commit it then use <strong>git status</strong> to check if the commit worked, then at the end while pushing we don’t use just use git push but instead we use <strong>git push (remote-name) (branch name)</strong> this should push to our branch in our forked repo. Then to create a pull request we go into the forked repo on your account and it should notify you at the top if you want to create a pull request and click the button, then type in what the request is about and what it changes or does and finally submit it. Generally when opening a pr we need a detailed description on it and a what,why or motivation factors to it as well.<strong> Part 6, Rebasing.<strong>Rebasing is necessary if some one already committed before you and the repo is ahead of you, rebasing basically pushes you ahead of a commit/commits of your branch.<strong>Git master Git pull origin master Git (branch name) Git rebase master Fasforward Filename… Fix up file Git add filename Git rebase continue Git push -f (remote) (branch)</strong>
+        </div>
+      </div>
+    </div>
+  </div> 
+</div>
+    
+</body>
+</html>    
