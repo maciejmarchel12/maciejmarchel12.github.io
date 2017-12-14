@@ -52,3 +52,4 @@ Git add <filename>
 Git status
 Git commit -m “first commit”
 
+Changes for google docs
